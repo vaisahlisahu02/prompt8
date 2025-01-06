@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dosis:wght@600&family=Jaro:opsz@6..72&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:wght@800&family=Oswald:wght@700&family=Playfair+Display:ital,wght@0,900;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wdth,wght@0,103,100..900;1,103,100..900&family=Yuji+Mai&display=swap');
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://i.pinimg.com/736x/bf/c0/93/bfc0933c9f65e59a79042fa5d8307829.jpg');
+    height: 100vh; /* Adjusts to viewport height */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-family: "Merriweather", serif;
+    overflow-x: hidden;
+}
+
+/* Navbar Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px 20px;
+    color: white;
+    border-bottom: 3px solid black;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav .menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+nav .menu li a:hover {
+    color: #ff6347;
+  
+}
+
+nav button {
+    background-color: #ff6347;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav button a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+nav button:hover {
+    background-color: #e5533d;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .menu {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    nav button {
+        align-self: flex-start;
+    }
+}
+
+
+.container {
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    text-align: center;
+}
+
+
+.hero h1 {
+    font-size: 80px;
+    margin-bottom: 20px;
+  margin-left: 50px;
+}
+
+.black{
+    color: yellow;
+}
+.friday{
+    color: #fff;
+}
+.sale{color: yellow;}
+.hero h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.button {
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    color: #000;
+    padding: 10px 50px;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.button:hover {
+    color: red;
+    background-color: #f8f8f8;
+    background-color: lightblue;
+}
+
+
+.img_content {
+    flex: 1;
+    text-align: right;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.img_content img {
+    margin-top: 5%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    max-height: 80%;
+    max-width: 100%;
+}
+.paragrapgh{
+    width: 100vw;
+}
+.paragrapgh p{
+    font-size: 15px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-left: 1%;
+   font-weight: 100;
+}
